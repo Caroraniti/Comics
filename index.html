@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Comics</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Buscador de Comics</h1>
+        </div>
+        <div class="header-img">
+        </div>
+    </header>
+    <section class="search-box-container">
+        <div class="search-line">
+            <form id="search-form">
+                <div class="search-text">
+                    <input id="search-input" name = "text" type="text" placeholder="🔍Ingresá tu búsqueda"
+                        aria-placeholder="Ingresá tu búsqueda">
+                </div>
+                <div class="type-filter">
+                    <label for="" aria-labelledby="Tipo de búsqueda">Tipo</label>
+                    <select name="type_filter" id="type-filter">
+                        <option value="comics">Comics</option>
+                        <option value="characters">Personajes</option>
+                    </select>
+                </div>
+                <div class="order-filter">
+                    <label for="" aria-labelledby="Orden de la búsqueda">Orden</label>
+                    <select name="sort_filter" id="sort-filter">
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                        <option value="mas-nuevos" id="newer">Más nuevos</option>
+                        <option value="mas-viejos" id="older">Más viejos</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-button" id="search-button">Buscar</button>
+            </form>
+        </div>
+    </section>
+    <h2>Resultados</h2>
+    <h2 id="results" class="subtitle">0</h2>
+    <section id="marvel-cards" class="marvel-cards">
+    </section>
+    <section class="turn-page-btn">
+        <div class="backward-btn-div">
+            <button type="button" class="pass-button" id="first-page-btn">⏪</button>
+            <button type="button" class="pass-button" id="prev-btn">◀️</button>
+        </div>
+        <div class="fordward-btn-div">
+            <button type="button" class="pass-button" id="next-btn">▶️</button>
+            <button type="button" class="pass-button" id="last-page-btn"><a id="anchor-last-page-btn">⏩</a></button>
+        </div>
+    </section>
+    <footer>
+        <h2>Hecho con 🤍 por:</h2>
+        <h2>Carolina Raniti</h2>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
